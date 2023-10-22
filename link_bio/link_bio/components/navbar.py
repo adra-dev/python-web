@@ -1,14 +1,15 @@
 import reflex as rx
+from link_bio.styles.styles import Size as Size
 
 def navbar() -> rx.Component:
     return rx.hstack(
         rx.text(
-            "adradev",
-            height="40px"
+            "adradev"
         ),
         position="sticky",
-        bg="Blue",
-        padding_x="16px",
-        padding_y="8px",
-        z_index="999"
+        bg="lightgray",
+        padding_x=Size.DEFAULT.value,
+        padding_y=Size.SMALL.value,
+        z_index="999",
+        top="0"
     )
